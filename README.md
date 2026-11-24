@@ -30,11 +30,11 @@ In emergency GIS, the expensive mistakes are rarely in the analysis. They happen
 flowchart LR
     CSV[Incident CSV] --> V[incidents.py<br/>validate and parse]
     STD[shelter_standard.py<br/>data rules] --> R[qaqc_rules.py<br/>rules engine]
-    subgraph Pure Python, tested in CI
+    subgraph PURE["Pure Python, tested in CI"]
         V
         R
     end
-    subgraph ArcPy layer, runs in ArcGIS Pro
+    subgraph ARCPY["ArcPy layer, runs in ArcGIS Pro"]
         I[gis/impact.py<br/>geometry and cursors]
         Q[gis/qaqc.py<br/>cursors and edit session]
         B[gis/batch.py<br/>lists and loops]
