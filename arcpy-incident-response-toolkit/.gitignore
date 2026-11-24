@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.gdb/
+*.lock
+*.aprx.bak
+*.xml.bak
+scratch/
+.env

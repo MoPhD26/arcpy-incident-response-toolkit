@@ -1,0 +1,20 @@
+[project]
+name = "arcpy-incident-response-toolkit"
+version = "1.0.0"
+description = "ArcPy automation for emergency GIS: incident intake, impact areas, and data QA/QC."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mogahid Hussein" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["UP007", "UP045"]
